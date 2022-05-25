@@ -29,6 +29,10 @@ jobs:
            NOTION_PULL_INTEGRATION_TOKEN: ${{ secrets.NOTION_PULL_INTEGRATION_TOKEN }}
            NOTION_PULL_ROOT_PAGE: ${{ secrets.NOTION_PULL_ROOT_PAGE }}           
         run: yarn notion-pull
+      - name: Identify to git (for Docusaurus Deploy)
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
