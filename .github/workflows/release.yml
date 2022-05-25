@@ -34,5 +34,7 @@ jobs:
         with:
           commit_message: Apply changes from notion-pull
       - name: Build github pages branch
+        env: 
+          GIT_USER: ${{ secrets.GIT_USER_FOR_PUSH_TO_GH_PAGES_BRANCH }}
         run: yarn deploy
 
