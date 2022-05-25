@@ -1,0 +1,38 @@
+name: Release
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: lts/*
+      - name: Install dependencies
+        run: yarn
+      - name: Pull from Notion
+        env: 
+           NOTION_PULL_INTEGRATION_TOKEN: ${{ secrets.NOTION_PULL_INTEGRATION_TOKEN }}
+           NOTION_PULL_ROOT_PAGE: ${{ secrets.NOTION_PULL_ROOT_PAGE }}           
+        run: yarn notion-pull
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply changes from notion-pull
+      - name: Build github pages branch
+        run: yarn deploy
+
