@@ -29,17 +29,15 @@ jobs:
            NOTION_PULL_INTEGRATION_TOKEN: ${{ secrets.NOTION_PULL_INTEGRATION_TOKEN }}
            NOTION_PULL_ROOT_PAGE: ${{ secrets.NOTION_PULL_ROOT_PAGE }}           
         run: yarn notion-pull
-      - name: Identify to git (for Docusaurus Deploy)
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Apply changes from notion-pull
       - name: Build github pages branch
-        env: 
-          GIT_USER: ${{ secrets.GIT_USER_FOR_PUSH_TO_GH_PAGES_BRANCH }}
-          GIT_PASS: ${{ secrets.PERSON_ACCESS_TOKEN_FOR_PUSH_TO_GH_PAGES_BRANCH }}
-        run: yarn deploy
-
+        run: yarn build
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PERSON_ACCESS_TOKEN_FOR_PUSH_TO_GH_PAGES_BRANCH }}
+          publish_dir: ./public
+  
