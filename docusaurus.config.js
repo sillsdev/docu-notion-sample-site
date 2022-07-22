@@ -9,16 +9,16 @@ const config = {
   title: "notion pull sample",
   tagline: "",
   url: "https://sillsdev.github.io",
-  baseUrl: "/notion-pull-sample-site/",
+  baseUrl: "/notion-pull-mdx-sample-site/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
   organizationName: "sillsdev", // Usually your GitHub org/user name.
-  projectName: "notion-pull-sample-site", // Usually your repo name.
+  projectName: "notion-pull-mdx-sample-site", // Usually your repo name.
   deploymentBranch: "gh-pages",
   // Docusaurus recommends "trailingSlash:false", but that gives me an error on build.
-  //[ERROR] Error: ENOENT: no such file or directory, open 'C:\dev\notion-pull\build\.html'
+  //[ERROR] Error: ENOENT: no such file or directory, open 'C:\dev\notion-pull-mdx\build\.html'
   trailingSlash: true,
 
   presets: [
@@ -86,7 +86,7 @@ const config = {
         ignorePatterns: [],
       },
       navbar: {
-        title: "Sample Docusaurus Site using notion-pull",
+        title: "Sample Docusaurus Site using notion-pull-mdx",
         logo: {
           alt: "Logo",
           src: "img/logo.svg",

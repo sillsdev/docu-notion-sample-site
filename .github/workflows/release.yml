@@ -28,11 +28,11 @@ jobs:
         env: 
            NOTION_PULL_INTEGRATION_TOKEN: ${{ secrets.NOTION_PULL_INTEGRATION_TOKEN }}
            NOTION_PULL_ROOT_PAGE: ${{ secrets.NOTION_PULL_ROOT_PAGE }}           
-        run: yarn notion-pull
+        run: yarn pull
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Apply changes from notion-pull
+          commit_message: Apply changes from notion-pull-mdx
       - name: Build github pages branch
         run: yarn build
       - name: Deploy to gh-pages
