@@ -10,7 +10,7 @@ const config = {
   tagline: "",
   url: "https://sillsdev.github.io",
   baseUrl: "/notion-pull-mdx-sample-site/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
