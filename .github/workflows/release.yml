@@ -32,7 +32,7 @@ jobs:
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Apply changes from notion-pull-mdx
+          commit_message: Apply changes from docu-notion
       - name: Build github pages branch
         run: yarn build
       - name: Deploy to gh-pages

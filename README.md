@@ -1,14 +1,14 @@
-This repo creates https://sillsdev.github.io/notion-pull-mdx-sample-site/.
+This repo creates https://sillsdev.github.io/docu-notion-sample-site/.
 
 The GitHub Action associated with this repo does these things:
 
-1. uses [notion-pull-mdx](https://github.com/sillsdev/notion-pull-mdx) to grab content from [this set of Notion pages](https://hattonjohn.notion.site/notion-pull-mdx-sample-site-0e998b32da3c47edad0f62a25b49818c) and convert them into Docusaurus-friendly markdown pages,
+1. uses [docu-notion](https://github.com/sillsdev/docu-notion) to grab content from [this set of Notion pages](https://hattonjohn.notion.site/docu-notion-sample-site-0e998b32da3c47edad0f62a25b49818c) and convert them into Docusaurus-friendly markdown pages,
 2. runs these through [Docusaurus](https://docusaurus.io/), and then
-3. publishes the result to Github Pages [here](https://sillsdev.github.io/notion-pull-mdx-sample-site/).
+3. publishes the result to Github Pages [here](https://sillsdev.github.io/docu-notion-sample-site/).
 
 ## Getting Started
 
-If you already have a Docusaurus site, or are using a different system, then you should use [notion-pull-mdx](https://github.com/sillsdev/notion-pull-mdx) directly. But if you're just getting started, you can save some time be forking this repo or using it as a template for your own [Docusaurus](https://docusaurus.io/) documentation project that uses [Notion](https://notion.so) for editing.
+If you already have a Docusaurus site, or are using a different system, then you should use [docu-notion](https://github.com/sillsdev/docu-notion) directly. But if you're just getting started, you can save some time be forking this repo or using it as a template for your own [Docusaurus](https://docusaurus.io/) documentation project that uses [Notion](https://notion.so) for editing.
 
 ### Instructions
 
@@ -16,7 +16,7 @@ If you already have a Docusaurus site, or are using a different system, then you
 
 2. In Notion, duplicate [this root documentation page](https://hattonjohn.notion.site/Documentation-Template-Docusaurus-0e998b32da3c47edad0f62a25b49818c) to your own account. You can rename it anything you like.
 
-3. In order for notion-pull-mdx to read your site via Notion's API, you need to create what Notion calls an "integration". Follow [these instructions](https://developers.notion.com/docs/getting-started) to make an integration and get your token. **Limit your integration to "READ" access**.
+3. In order for docu-notion to read your site via Notion's API, you need to create what Notion calls an "integration". Follow [these instructions](https://developers.notion.com/docs/getting-started) to make an integration and get your token. **Limit your integration to "READ" access**.
 
 4. To test locally, define two environment variables:
 
@@ -33,4 +33,4 @@ If you already have a Docusaurus site, or are using a different system, then you
 
 7. Under "Actions", you should be able to manually launch a new "release" of your site.
 
-8. For information on adding pages, see the [notion-pull-mdx](https://github.com/sillsdev/notion-pull-mdx) instructions.
+8. For information on adding pages, see the [docu-notion](https://github.com/sillsdev/docu-notion) instructions.
