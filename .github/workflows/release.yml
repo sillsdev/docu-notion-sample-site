@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       logLevel:
-        description: 'Log level'     
+        description: "Log level"
         required: true
-        default: 'warning'
+        default: "warning"
 jobs:
   release:
     name: Release
@@ -25,9 +25,9 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Pull from Notion
-        env: 
-           NOTION_PULL_INTEGRATION_TOKEN: ${{ secrets.NOTION_PULL_INTEGRATION_TOKEN }}
-           NOTION_PULL_ROOT_PAGE: ${{ secrets.NOTION_PULL_ROOT_PAGE }}           
+        env:
+          DOCU_NOTION_INTEGRATION_TOKEN: ${{ secrets.DOCU_NOTION_INTEGRATION_TOKEN }}
+          DOCU_NOTION_ROOT_PAGE: ${{ secrets.DOCU_NOTION_ROOT_PAGE }}
         run: yarn pull
       - name: Commit
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -40,4 +40,3 @@ jobs:
         with:
           github_token: ${{ secrets.PERSON_ACCESS_TOKEN_FOR_PUSH_TO_GH_PAGES_BRANCH }}
           publish_dir: ./build
-  

@@ -2125,9 +2125,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.6.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.1.tgz#828e4785ccca13f44e2fb6852ae0ef11e3e20ba5"
-  integrity sha512-z+2vB6yDt1fNwKOeGbckpmirO+VBDuQqecXkgeIqDlaOtmKn6hPR/viQ8cxCfqLU4fTlvM3+YjM367TukWdxpg==
+  version "18.6.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.5.tgz#06caea822caf9e59d5034b695186ee74154d2802"
+  integrity sha512-Xjt5ZGUa5WusGZJ4WJPbOT8QOqp6nDynVFRKcUt32bOgvXEoc6o085WNkYTMO7ifAj2isEfQQ2cseE+wT6jsRw==
 
 "@types/node@^17.0.5":
   version "17.0.45"
@@ -4242,9 +4242,9 @@ dns-packet@^5.2.2:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
 docu-notion@*:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/docu-notion/-/docu-notion-0.4.2.tgz#7e955d1ef1c65c4a7fdfacd5c32d8d4c86ee2727"
-  integrity sha512-L+ablXSsSsRNcdsVH3SzYFimDzXonZrg1Bp62ycJTw3KoG6Q60kWQPPNaHYJuh7Io5VgV+/+E+w6+UU/FoJnJA==
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/docu-notion/-/docu-notion-0.4.3.tgz#70b1a0b202366068c296bd48ffbabea8f89898ce"
+  integrity sha512-TaodeHEY8z/25mhLnDTchJkwsqUGJ+WeezaiDdSCBYv5sXWZBJt4oFDuyHctzTt7OZzKYKMvXuHqX67SFxZDdw==
   dependencies:
     "@notionhq/client" "^1.0.4"
     chalk "^4.1.2"
@@ -6179,9 +6179,9 @@ normalize-url@^6.0.1:
   integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
 notion-to-md@^2.5.2:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/notion-to-md/-/notion-to-md-2.5.3.tgz#9cb41156e8bf99197c7291950ca9d63a39e63bce"
-  integrity sha512-M3K8HazamqwJ/kmBMvtaGm9TL/SENQG1b3wXraUFYBJ5ipQUrWBuJEyToiqPLs8TNA0OHH8IzgFxwnBNrd7pwQ==
+  version "2.5.5"
+  resolved "https://registry.yarnpkg.com/notion-to-md/-/notion-to-md-2.5.5.tgz#b022cd9d6f01125762b85e26e0a41ae15410bd12"
+  integrity sha512-EdzuNZpJyc+287ItRALOld90RkshWBDiSA0WThf75z98Y8cyynhu6Hg+h377eD5K4UOSQHy5K0SUV4vGdCxCiA==
   dependencies:
     markdown-table "^2.0.0"
 
