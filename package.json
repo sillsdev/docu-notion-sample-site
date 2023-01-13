@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "pull": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
-    "//pull:stable": "This uses the specific version of docu-notion in yarn.lock, not necessarily the latest",
-    "pull:stable": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "pull-test-tagged": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/ --status-tag test",
+    "pull:latest": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "//pull": "This uses the specific version of docu-notion in yarn.lock, not necessarily the latest",
+    "pull": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "deploy": "docusaurus deploy"
