@@ -2,12 +2,12 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
     inputs:
       logLevel:
         description: "Log level"
-        required: true
+        required: false
         default: "warning"
 jobs:
   release:
