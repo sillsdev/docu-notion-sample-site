@@ -9,7 +9,9 @@
     "pull": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "//serve": "Needed, for example, to test the search functionality locally",
+    "serve": "docusaurus serve"
   },
   "dependencies": {
     "@docusaurus/core": "^2.2.0",
