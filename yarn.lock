@@ -4592,10 +4592,10 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docu-notion@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/docu-notion/-/docu-notion-0.10.0.tgz#230929a35231c789bb1ce157791dcdc7e6454ff5"
-  integrity sha512-gEU+D7OeHmFE/5qq5eJ2McGGkem6Xsf7o9jQQgU1c7NChLvzDRo+BsC1DQmhP6dvY21LgaCMFNA/Jnx7LHvQCg==
+docu-notion@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/docu-notion/-/docu-notion-0.11.0.tgz#57699f3104149b43e2bc6fdd087bec0b88e0f9d6"
+  integrity sha512-XnKtccAjWKeUmIRkESrCbPeR1X5VbyYWkb1wEYihXG14PJJHY63xHrjZAmAfy01ooDsz41hcOC6i2M8qQn+RaQ==
   dependencies:
     "@notionhq/client" "2.2.3"
     chalk "^4.1.2"
