@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": false,
   "scripts": {
-    "pull-test-tagged": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/ --status-tag test",
-    "pull:latest": "cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "clear-docs": "rimraf ./docs/",
+    "pull-test-tagged": "yarn clear-docs && cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/ --status-tag test",
+    "pull:latest": "yarn clear-docs && cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "//pull": "This uses the specific version of docu-notion in yarn.lock, not necessarily the latest",
-    "pull": "cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "pull": "yarn clear-docs && cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "deploy": "docusaurus deploy",
@@ -19,12 +20,13 @@
     "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "@mdx-js/react": "^1",
     "clsx": "^1.2.1",
-    "docu-notion": "*",
+    "docu-notion": "^0.10.0",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-gif-player": "^0.4.2",
-    "react-player": "^2.10.1"
+    "react-player": "^2.10.1",
+    "rimraf": "^4.1.2"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.2.0",
