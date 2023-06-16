@@ -5,7 +5,7 @@
   "scripts": {
     "clear-docs": "rimraf ./docs/",
     "pull-test-tagged": "yarn clear-docs && cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/ --status-tag test",
-    "pull:latest": "yarn clear-docs && cross-var npx docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
+    "pull:latest": "yarn clear-docs && cross-var npx @sillsdev/docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "//pull": "This uses the specific version of docu-notion in yarn.lock, not necessarily the latest",
     "pull": "yarn clear-docs && cross-var yarn docu-notion -n $DOCU_NOTION_INTEGRATION_TOKEN -r $DOCU_NOTION_SAMPLE_ROOT_PAGE -m ./docs -i ./static/notion_imgs -p /notion_imgs/",
     "start": "docusaurus start",
@@ -20,7 +20,7 @@
     "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "@mdx-js/react": "^1",
     "clsx": "^1.2.1",
-    "docu-notion": "^0.11.0",
+    "@sillsdev/docu-notion": "^0.13.0",
     "prism-react-renderer": "^1.3.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -45,5 +45,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "packageManager": "yarn@1.22.19",
+  "volta": {
+    "node": "16.14.0",
+    "yarn": "1.22.19"
   }
 }

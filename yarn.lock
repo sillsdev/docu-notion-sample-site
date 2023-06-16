@@ -2085,6 +2085,27 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
+"@sillsdev/docu-notion@^0.13.0":
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/@sillsdev/docu-notion/-/docu-notion-0.13.2.tgz#34611b8788ddb71e4bc1e7f7b38b63336f3cae73"
+  integrity sha512-KPHPxwBFMRyv8xHVRRsjymLrToWH8JQAiVBUalDuuLDady7azAFDWakfBp44JV+J90kdtGhAmkZcX+4nQbBgFg==
+  dependencies:
+    "@notionhq/client" "2.2.3"
+    chalk "^4.1.2"
+    commander "^9.2.0"
+    cosmiconfig "^8.0.0"
+    cosmiconfig-typescript-loader "^4.3.0"
+    file-type "16.5.1"
+    fs-extra "^10.1.0"
+    limiter "^2.1.0"
+    markdown-table "^2.0.0"
+    node-fetch "2.6.6"
+    notion-client "^4"
+    notion-to-md "2.5.5"
+    path "^0.12.7"
+    sanitize-filename "^1.6.3"
+    ts-node "^10.2.1"
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -4592,27 +4613,6 @@ dns-packet@^5.2.2:
   dependencies:
     "@leichtgewicht/ip-codec" "^2.0.1"
 
-docu-notion@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/docu-notion/-/docu-notion-0.11.0.tgz#57699f3104149b43e2bc6fdd087bec0b88e0f9d6"
-  integrity sha512-XnKtccAjWKeUmIRkESrCbPeR1X5VbyYWkb1wEYihXG14PJJHY63xHrjZAmAfy01ooDsz41hcOC6i2M8qQn+RaQ==
-  dependencies:
-    "@notionhq/client" "2.2.3"
-    chalk "^4.1.2"
-    commander "^9.2.0"
-    cosmiconfig "^8.0.0"
-    cosmiconfig-typescript-loader "^4.3.0"
-    file-type "16.5.1"
-    fs-extra "^10.1.0"
-    limiter "^2.1.0"
-    markdown-table "^2.0.0"
-    node-fetch "2.6.6"
-    notion-client "^4"
-    notion-to-md "^2.5.5"
-    path "^0.12.7"
-    sanitize-filename "^1.6.3"
-    ts-node "^10.2.1"
-
 dom-converter@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
@@ -6597,7 +6597,7 @@ notion-client@^4:
     notion-utils "^4.19.8"
     p-map "^4.0.0"
 
-notion-to-md@^2.5.5:
+notion-to-md@2.5.5:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/notion-to-md/-/notion-to-md-2.5.5.tgz#b022cd9d6f01125762b85e26e0a41ae15410bd12"
   integrity sha512-EdzuNZpJyc+287ItRALOld90RkshWBDiSA0WThf75z98Y8cyynhu6Hg+h377eD5K4UOSQHy5K0SUV4vGdCxCiA==
